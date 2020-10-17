@@ -1,6 +1,6 @@
 asuro-template
 ---
-This repository is a template project for coding on the ASURO roboter with CMake.
+This repository is a template project for coding on the [ASURO roboter](https://de.wikipedia.org/wiki/ASURO) with CMake.
 
 ## Information
 This repository contains the ASURO C library, a sample program and a CMake build file to build the program.
