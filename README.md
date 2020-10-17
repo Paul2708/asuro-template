@@ -7,10 +7,10 @@ This repository contains the ASURO C library, a sample program and a CMake build
 I wanted to use CLion, so I copied and edited the `CMakeLists.txt` file to build the program using CLion and CMake.
 
 An alternative is [Atmel Studio 7](https://www.microchip.com/mplab/avr-support/atmel-studio-7).
-Atmel Studio has an embedded AVR toolchain, build tool and a (semi-clever) IDE.
+Atmel Studio has an embedded AVR toolchain, a build tool and a (semi-clever) IDE.
 Therefore, no further installations are required to start developing.
 
-*Note: Most of the mentioned resources will be mirrored in the release if they may become unavailable.* 
+*Note: Most of the mentioned resources will be mirrored in the release as they may become unavailable.* 
 
 ### General procedure with ASURO
 1. Build your ASURO (soldering and that stuff).
@@ -37,9 +37,9 @@ Once again, don't forget to add it to your PATH variable to use the commands in 
 
 ### AVR toolchain
 You will need an AVR toolchain.
-Meanwhile, there exist some different implementations of it.
-I tested some toolchains (Atmel AVR, Prebuilt Windows Toolchain by Sysprogs, WinAVR and AVR-GCC by ZAK) and [WinAVR]() works best.
-However, if you use WinAVR you have to overwrite `utils/bin/msys-1.0.dll` with a modified version (cf [http://nmp24.de/?Mikrocontroller:WinAVR](http://nmp24.de/?Mikrocontroller:WinAVR)).
+Meanwhile, there exists some different implementations of it.
+I tested some toolchains (Atmel AVR, Prebuilt Windows Toolchain by Sysprogs, WinAVR and AVR-GCC by ZAK) and [WinAVR]() works best for me.
+However, if you use WinAVR you have to overwrite `utils/bin/msys-1.0.dll` with a modified version (cf. [Uni Regensburg](https://homepages.uni-regensburg.de/~erc24492/WINAVR_unter_WIN10/WINAVR_unter_WIN10.html)).
 Once again, don't forget to add the `bin/` directory to your PATH variable.
 
 ## Usage
@@ -53,7 +53,7 @@ Note the `# TODO: ` comments.
 
 ## Build it
 The ASURO flash tool requires a `.hex` file.
-Run `cmake` and `make`.
+Run `cmake` and then `make`.
 The `.hex` file will be built into `bin/`.
 
 If you are using Windows and MinGW, the command `cmake -G "MinGW Makefiles" & mingw32-make` will build the file.
