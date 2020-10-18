@@ -31,7 +31,7 @@ I installed MinGW to use commands like `make` on Windows.
 Make sure to add it to your PATH variable.
 
 In order to build the project, you need [CMake](https://cmake.org).
-CLion has an embedded version of CLion.
+CLion has an embedded version of CMake.
 Otherwise install it manually.
 Once again, don't forget to add it to your PATH variable to use the commands in the console.
 
